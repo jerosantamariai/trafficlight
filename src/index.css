@@ -15,7 +15,7 @@ body {
 }
 
 .container #red {
-    background-color: red;
+    
     width: 150px;
     height: 150px;
     margin: 30px auto;
@@ -23,7 +23,7 @@ body {
 }
 
 .container #yellow {
-    background-color: yellow;
+    
     width: 150px;
     height: 150px;
     margin: 30px auto;
@@ -31,7 +31,7 @@ body {
 }
 
 .container #green {
-    background-color: green;
+    
     width: 150px;
     height: 150px;
     margin: 30px auto;
