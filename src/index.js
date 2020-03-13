@@ -15,18 +15,15 @@ import 'popper.js';
 import 'bootstrap';
 
 
-class Home extends Component {
-
-    __constructor(){
-        super();
-        this.state={}
+function TrafficLight(props){
+    return(
+            <div className="container">
+                <div className="redlight" id="red"></div>
+                <div className="yellowlight" id="yellow"></div>
+                <div className="greenlight" id="green"></div>
+            </div>
+            )
     }
-    render (){
-        return(
-            <h1> Proyecto React Vacio</h1>
-        )
-    }
-}
  
 
-ReactDOM.render(<Home />, document.querySelector("#root"));
+ReactDOM.render(<TrafficLight />, document.querySelector("#root"));
