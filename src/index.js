@@ -30,42 +30,43 @@ class TrafficLight extends React.Component {
             e.target.classList.remove("alert-danger");
             e.target.classList.add("bg-danger")
             this.setState({
-                onred: 1
+                onred: 1,
+                onyellow: 0
             })
-         } else if (
-            e.target.id == "red" && this.state.onred === 1){
+        } else if (e.target.id == "red" && this.state.onred === 1) {
             e.target.classList.add("alert-danger");
             e.target.classList.remove("bg-danger")
             this.setState({
-                onred: 0
+                onred: 0,
+                ongreen: 1
             })
-            }
-
-        if (e.target.id == "yellow" && this.state.onyellow === 0) {
+        } else if (e.target.id == "yellow" && this.state.onyellow === 0) {
             e.target.classList.remove("alert-warning");
             e.target.classList.add("bg-warning")
             this.setState({
-                onyellow: 1
+                onyellow: 1,
+                ongreen: 0
             })
-        } else if (e.target.id == "yellow" && this.state.onyellow === 1){
+        } else if (e.target.id == "yellow" && this.state.onyellow === 1) {
             e.target.classList.add("alert-warning");
             e.target.classList.remove("bg-warning")
             this.setState({
-                onyellow: 0
+                onyellow: 0,
+                onred: 1
             })
-        }
-
-        if (e.target.id == "green" && this.state.ongreen === 0) {
+        } else if (e.target.id == "green" && this.state.ongreen === 0) {
             e.target.classList.remove("alert-success");
             e.target.classList.add("bg-success")
             this.setState({
-                ongreen: 1
+                ongreen: 1,
+                onred: 0
             })
-        } else if (e.target.id == "green" && this.state.ongreen === 1){
+        } else if (e.target.id == "green" && this.state.ongreen === 1) {
             e.target.classList.add("alert-success");
             e.target.classList.remove("bg-success")
             this.setState({
-                ongreen: 0
+                ongreen: 0,
+                onyellow: 1
             })
         }
 
@@ -76,7 +77,7 @@ class TrafficLight extends React.Component {
     render() {
         return (
             <div className="container">
-                <div className={" alert-danger redLight"}  onClick={this.changeLight} id="red"></div>
+                <div className={" alert-danger redLight"} onClick={this.changeLight} id="red"></div>
                 <div className={" alert-warning yellowLight"} onClick={this.changeLight} id="yellow"></div>
                 <div className={" alert-success greenLight"} onClick={this.changeLight} id="green"></div>
             </div>

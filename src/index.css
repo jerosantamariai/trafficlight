@@ -1,12 +1,12 @@
 body {
-    background-color: grey;
+    background-color: skyblue;
 }
 
 .container {
     background-color: black;
     width: 300px;
     height: 600px;
-    margin: 20px auto;
+    margin: 40px auto;
     border-radius: 50px;
     border: 15px;
     padding: 3px;
